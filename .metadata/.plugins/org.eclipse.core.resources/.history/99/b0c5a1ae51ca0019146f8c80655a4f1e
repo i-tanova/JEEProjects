@@ -1,0 +1,14 @@
+<html>
+
+<body>
+
+Enter to do list:
+
+<form action="jsp-session.jsp">
+<input type="text" value="todoItem">
+<input type="submit" value="Add">
+</form>
+
+</body>
+
+</html>

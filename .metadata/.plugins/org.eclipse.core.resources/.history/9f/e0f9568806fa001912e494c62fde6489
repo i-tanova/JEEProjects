@@ -1,0 +1,23 @@
+
+<!--  Import java packages  -->
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.*, com.tanovai.servlet.*" %>  
+  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student tracker app</title>
+</head>
+<body>
+
+<% 
+    //JAVA code here:
+    	List<Student> theStudents = (List<Student>) request.getAttribute("STUDENTS");
+%>
+
+<%= theStudents %>
+
+</body>
+</html>

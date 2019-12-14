@@ -1,0 +1,9 @@
+127.0.0.1 - - [01/Sep/2019:17:35:10 +0300] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [01/Sep/2019:17:35:11 +0300] "GET /tagdemo/jsp-function-tag.jsp HTTP/1.1" 200 147
+0:0:0:0:0:0:0:1 - - [01/Sep/2019:17:39:54 +0300] "GET /tagdemo/jsp-function-tag.jsp HTTP/1.1" 200 216
+0:0:0:0:0:0:0:1 - - [01/Sep/2019:17:45:21 +0300] "GET /tagdemo/jsp-function-tag.jsp HTTP/1.1" 500 2756
+0:0:0:0:0:0:0:1 - - [01/Sep/2019:17:46:15 +0300] "GET /tagdemo/jsp-function-tag.jsp HTTP/1.1" 200 388
+0:0:0:0:0:0:0:1 - - [01/Sep/2019:17:49:38 +0300] "GET /tagdemo/jsp-function-tag.jsp HTTP/1.1" 500 2866
+0:0:0:0:0:0:0:1 - - [01/Sep/2019:17:50:21 +0300] "GET /tagdemo/jsp-function-tag.jsp HTTP/1.1" 500 2866
+0:0:0:0:0:0:0:1 - - [01/Sep/2019:17:51:06 +0300] "GET /tagdemo/jsp-function-tag.jsp HTTP/1.1" 200 420
+0:0:0:0:0:0:0:1 - - [01/Sep/2019:17:54:07 +0300] "GET /tagdemo/jsp-function-tag.jsp HTTP/1.1" 200 487

@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSTL Function tags</title>
+</head>
+<body>
+
+<c:set var="data" value="DataStr" />
+Length of ${data} is ${fn:length(data)}
+<br />
+Uppercase is ${fn:toUpperCase(data}
+
+
+</body>
+</html>

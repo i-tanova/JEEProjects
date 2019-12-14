@@ -1,0 +1,46 @@
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student tracker app</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"></link>
+</head>
+<body>
+
+
+	<div id="wrapper">
+		<div id="header">
+			<h2>Students List</h2>
+		</div>
+	</div>
+
+	<div id="container">
+
+		<div id="content">
+			<table>
+				<tr>
+					<th>First name</th>
+					<th>Last name</th>
+					<th>Email</th>
+				</tr>
+
+				<c:forEach var="temp" items="${STUDENTS}">
+
+					<tr>
+						<td>${temp.getFirstname()}</td>
+						<td>${temp.getLastname()}</td>
+						<td>${temp.getEmail()}</td>
+					</tr>
+				</c:forEach>
+
+
+			</table>
+
+		</div>
+	</div>
+
+</body>
+</html>

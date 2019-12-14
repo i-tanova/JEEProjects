@@ -1,0 +1,12 @@
+127.0.0.1 - - [16/Sep/2019:22:09:36 +0300] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:22:09:36 +0300] "GET /servletdemo/HelloWorldServlet HTTP/1.1" 200 86
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:22:09:50 +0300] "GET /servletdemo/HelloWorldServlet HTTP/1.1" 200 86
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:22:09:50 +0300] "GET /favicon.ico HTTP/1.1" 404 1085
+127.0.0.1 - - [16/Sep/2019:22:22:26 +0300] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:22:22:27 +0300] "GET /servletdemo/JSPForm2.jsp HTTP/1.1" 200 283
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:22:22:32 +0300] "GET /servletdemo/FormServlet2?Submit=Submit HTTP/1.1" 500 1458
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:22:23:51 +0300] "GET /servletdemo/JSPForm2.jsp HTTP/1.1" 200 306
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:22:23:56 +0300] "GET /servletdemo/FormServlet2?name=asdf&lastname=asdf HTTP/1.1" 500 1458
+127.0.0.1 - - [16/Sep/2019:22:35:01 +0300] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:22:35:01 +0300] "GET /servletdemo/JSPForm2.jsp HTTP/1.1" 200 306
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:22:35:19 +0300] "GET /servletdemo/FormServlet2?name=Iana&lastname=asdf HTTP/1.1" 200 36

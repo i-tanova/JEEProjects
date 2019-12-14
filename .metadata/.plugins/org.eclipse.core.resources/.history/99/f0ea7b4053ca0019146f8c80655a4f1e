@@ -1,0 +1,34 @@
+<%@ page import="java.util.*" %>
+
+<html>
+<body>
+
+Enter to do list:
+
+<form action="jsp-session.jsp">
+<input type="text" name="todoItem" />
+<input type="submit" value="Add" />
+</form>
+
+<%
+ String todoItem = request.getParameter("todoItem");
+%>
+ 
+
+<br />
+<h1>TODO list:</h1>
+
+<li>
+<%
+ArrayList<String> items = (ArrayList<String>)session.getAttribute("todoItem");
+if(items != null){
+	for(String item: items){
+		out.print("<ul>" + item);
+	}
+}
+%>
+</li>
+
+</body>
+
+</html>

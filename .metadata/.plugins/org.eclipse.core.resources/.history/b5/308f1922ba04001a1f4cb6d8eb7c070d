@@ -1,0 +1,54 @@
+
+<!--  Import java packages  -->
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.*, com.tanovai.servlet.*" %>  
+  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student tracker app</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"></link>
+</head>
+<body>
+
+<% 
+    //JAVA code here:
+    	List<Student> theStudents = (List<Student>) request.getAttribute("STUDENTS");
+%>
+
+<%= theStudents %>
+
+<div id="wrapper">
+      <div id="header">
+       <h2>Students List</h2>
+      </div>
+</div>
+
+<div id="container">
+
+<div id="content">
+<table>
+ <tr>
+ <th> First name </th>
+  <th> Last name </th>
+   <th> Email </th>
+ </tr>
+ <% for(Student temp : theStudents){ %>
+ 
+ <tr>
+  <td> <%= temp.getFirstname() %> </td>
+  <td> <%= temp.getLastname() %> </td>
+  <td> <%= temp.getEmail() %> </td>
+ </tr>
+ 
+ <%} %>
+
+</table>
+
+</div>
+</div>
+
+</body>
+</html>

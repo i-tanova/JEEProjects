@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Confirmation Title</title>
+</head>
+<body>
+
+The student is confirmed.
+
+First Name: <%= request.getParameter("firstName") %>
+
+<br />
+Last Name: ${param.lastName}
+<br />
+
+Country: ${param.country}
+
+<br />
+
+Language: ${param.language}
+
+
+Other languages:
+<br />
+<ul>
+<%
+  String[] languages = request.getParameterValues("languageOther");
+  for(String language: languages){
+	  out.print("<li>" + language + "</li>");
+  }
+ %>
+
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+public class StudentDBUtil {
+	
+	DataSource dataSource;
+	
+	 StudentDBUtil(DataSource dataSource){
+		 this.dataSource = dataSource;
+	 }
+
+	 public List<Student> getStuents(){
+		 Connection conn = null;
+		 Statement stmt = null;
+		 ResultSet resSet = null;
+		 
+		 List<Student> students = new ArrayList();
+		 
+		 try {
+			//get a connection
+			 conn = this.dataSource.getConnection();
+			 
+			 //create statement
+			 String sql = "select * from student order by first_name";
+			 stmt = conn.createStatement();
+			 resSet = stmt.executeQuery(sql);
+			 
+			//process result set
+			 while(resSet.next()) {
+				 //retrieve data from row
+				 
+				 //create Student object
+			 }
+			 
+		 } catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			 if(resSet != null) {
+				 resSet.close();
+			 }
+		 }
+		 
+		 return students;
+		 
+		 
+		 
+		
+		 
+		 
+		 
+		 //close JDBC objects
+	 }
+}
